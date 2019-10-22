@@ -47,15 +47,24 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sg-Ov-XNd">
                                                         <rect key="frame" x="0.0" y="0.0" width="111.5" height="100.5"/>
-                                                        <state key="normal" title="Button" image="plate_25kg.png"/>
+                                                        <state key="normal" title="25" image="plate_25kg.png"/>
+                                                        <connections>
+                                                            <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Db6-2U-wrN"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ml3-Yr-IXF">
                                                         <rect key="frame" x="121.5" y="0.0" width="111" height="100.5"/>
-                                                        <state key="normal" title="Button" image="plate_20kg.png"/>
+                                                        <state key="normal" title="20" image="plate_20kg.png"/>
+                                                        <connections>
+                                                            <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e2a-cB-RS0"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6l-Pm-Hz7">
                                                         <rect key="frame" x="242.5" y="0.0" width="111.5" height="100.5"/>
-                                                        <state key="normal" title="Button" image="plate_15kg.png"/>
+                                                        <state key="normal" title="15" image="plate_15kg.png"/>
+                                                        <connections>
+                                                            <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajR-YE-aWs"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -68,15 +77,24 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylE-29-dkn">
                                                         <rect key="frame" x="0.0" y="0.0" width="111.5" height="100.5"/>
-                                                        <state key="normal" title="Button" image="plate_10kg.png"/>
+                                                        <state key="normal" title="10" image="plate_10kg.png"/>
+                                                        <connections>
+                                                            <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jDF-x4-lNY"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqz-vH-V4p">
                                                         <rect key="frame" x="121.5" y="0.0" width="111" height="100.5"/>
-                                                        <state key="normal" title="Button" image="plate_5kg.png"/>
+                                                        <state key="normal" title="5" image="plate_5kg.png"/>
+                                                        <connections>
+                                                            <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SeX-3K-gYo"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGK-EE-uAu">
                                                         <rect key="frame" x="242.5" y="0.0" width="111.5" height="100.5"/>
-                                                        <state key="normal" title="Button" image="plate_2_5kg.png"/>
+                                                        <state key="normal" title="2.5" image="plate_2_5kg.png"/>
+                                                        <connections>
+                                                            <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b27-ii-dwv"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -89,15 +107,24 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="az9-ZZ-sEa">
                                                         <rect key="frame" x="0.0" y="0.0" width="111.5" height="100.5"/>
-                                                        <state key="normal" title="Button" image="plate_1_25kg.png"/>
+                                                        <state key="normal" title="1.25" image="plate_1_25kg.png"/>
+                                                        <connections>
+                                                            <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gvy-Gi-ZPf"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xml-DJ-Kdr">
                                                         <rect key="frame" x="121.5" y="0.0" width="111" height="100.5"/>
-                                                        <state key="normal" title="Button" image="plate_0_5kg.png"/>
+                                                        <state key="normal" title="0.5" image="plate_0_5kg.png"/>
+                                                        <connections>
+                                                            <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gLm-Od-zO6"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4x-43-r3n">
                                                         <rect key="frame" x="242.5" y="0.0" width="111.5" height="100.5"/>
-                                                        <state key="normal" title="Button" image="plate_2_5kg.png"/>
+                                                        <state key="normal" title="0.25" image="plate_2_5kg.png"/>
+                                                        <connections>
+                                                            <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pz5-Bj-8Ej"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -117,6 +144,9 @@
                                                         <rect key="frame" x="145" y="0.0" width="105" height="100.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="Clear"/>
+                                                        <connections>
+                                                            <action selector="clearCalculator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="syN-NK-HQc"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -154,6 +184,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="zJn-nQ-zOP" id="9UU-Hl-9CN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
