@@ -15,6 +15,8 @@
 		561102F62357C0FB002BC0C0 /* plate_20kg.png in Resources */ = {isa = PBXBuildFile; fileRef = 561102EE2357C0FB002BC0C0 /* plate_20kg.png */; };
 		561102F72357C0FB002BC0C0 /* plate_1_25kg.png in Resources */ = {isa = PBXBuildFile; fileRef = 561102EF2357C0FB002BC0C0 /* plate_1_25kg.png */; };
 		561102F82357C0FB002BC0C0 /* plate_10kg.png in Resources */ = {isa = PBXBuildFile; fileRef = 561102F02357C0FB002BC0C0 /* plate_10kg.png */; };
+		5673594E2360F41D00F4629B /* removeDash.png in Resources */ = {isa = PBXBuildFile; fileRef = 5673594C2360F41C00F4629B /* removeDash.png */; };
+		5673594F2360F41D00F4629B /* removeX.png in Resources */ = {isa = PBXBuildFile; fileRef = 5673594D2360F41C00F4629B /* removeX.png */; };
 		56D6F9CD2357B8DD0070BF87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D6F9CC2357B8DD0070BF87 /* AppDelegate.swift */; };
 		56D6F9CF2357B8DD0070BF87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D6F9CE2357B8DD0070BF87 /* ViewController.swift */; };
 		56D6F9D22357B8DD0070BF87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D6F9D02357B8DD0070BF87 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 		561102EE2357C0FB002BC0C0 /* plate_20kg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plate_20kg.png; sourceTree = "<group>"; };
 		561102EF2357C0FB002BC0C0 /* plate_1_25kg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plate_1_25kg.png; sourceTree = "<group>"; };
 		561102F02357C0FB002BC0C0 /* plate_10kg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plate_10kg.png; sourceTree = "<group>"; };
+		5673594C2360F41C00F4629B /* removeDash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = removeDash.png; path = ../../../../../Downloads/removeDash.png; sourceTree = "<group>"; };
+		5673594D2360F41C00F4629B /* removeX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = removeX.png; path = ../../../../../Downloads/removeX.png; sourceTree = "<group>"; };
 		56D6F9C92357B8DD0070BF87 /* KiloCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiloCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D6F9CC2357B8DD0070BF87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56D6F9CE2357B8DD0070BF87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 		561102F92357C115002BC0C0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5673594C2360F41C00F4629B /* removeDash.png */,
+				5673594D2360F41C00F4629B /* removeX.png */,
 				561102EC2357C0FB002BC0C0 /* plate_0_5kg.png */,
 				561102EF2357C0FB002BC0C0 /* plate_1_25kg.png */,
 				561102E92357C0FA002BC0C0 /* plate_2_5kg.png */,
@@ -154,9 +160,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5673594F2360F41D00F4629B /* removeX.png in Resources */,
 				561102F32357C0FB002BC0C0 /* plate_15kg.png in Resources */,
 				561102F72357C0FB002BC0C0 /* plate_1_25kg.png in Resources */,
 				56D6F9D72357B8DE0070BF87 /* LaunchScreen.storyboard in Resources */,
+				5673594E2360F41D00F4629B /* removeDash.png in Resources */,
 				561102F42357C0FB002BC0C0 /* plate_0_5kg.png in Resources */,
 				56D6F9D42357B8DE0070BF87 /* Assets.xcassets in Resources */,
 				561102F52357C0FB002BC0C0 /* plate_5kg.png in Resources */,
