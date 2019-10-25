@@ -49,29 +49,29 @@
                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu9-Fu-gH4">
                                 <rect key="frame" x="0.0" y="300" width="414" height="596"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="VSD-L7-JXV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VSD-L7-JXV">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="596"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6gH-O4-6If">
-                                                <rect key="frame" x="30" y="40" width="354" height="100.5"/>
+                                                <rect key="frame" x="30" y="40" width="354" height="108"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sg-Ov-XNd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="100.5"/>
-                                                        <state key="normal" title="25" image="plate_25kg.png"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="108"/>
+                                                        <state key="normal" title="25" image="kg_25.png"/>
                                                         <connections>
                                                             <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Db6-2U-wrN"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ml3-Yr-IXF">
-                                                        <rect key="frame" x="121.5" y="0.0" width="111" height="100.5"/>
-                                                        <state key="normal" title="20" image="plate_20kg.png"/>
+                                                        <rect key="frame" x="121.5" y="0.0" width="111" height="108"/>
+                                                        <state key="normal" title="20" image="kg_20.png"/>
                                                         <connections>
                                                             <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e2a-cB-RS0"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6l-Pm-Hz7">
-                                                        <rect key="frame" x="242.5" y="0.0" width="111.5" height="100.5"/>
-                                                        <state key="normal" title="15" image="plate_15kg.png"/>
+                                                        <rect key="frame" x="242.5" y="0.0" width="111.5" height="108"/>
+                                                        <state key="normal" title="15" image="kg_15.png"/>
                                                         <connections>
                                                             <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajR-YE-aWs"/>
                                                         </connections>
@@ -83,25 +83,25 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v9b-0Z-uwz">
-                                                <rect key="frame" x="30" y="170.5" width="354" height="100.5"/>
+                                                <rect key="frame" x="30" y="168" width="354" height="108"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylE-29-dkn">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="100.5"/>
-                                                        <state key="normal" title="10" image="plate_10kg.png"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="108"/>
+                                                        <state key="normal" title="10" image="kg_10.png"/>
                                                         <connections>
                                                             <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jDF-x4-lNY"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqz-vH-V4p">
-                                                        <rect key="frame" x="121.5" y="0.0" width="111" height="100.5"/>
-                                                        <state key="normal" title="5" image="plate_5kg.png"/>
+                                                        <rect key="frame" x="121.5" y="0.0" width="111" height="108"/>
+                                                        <state key="normal" title="5" image="kg_5.png"/>
                                                         <connections>
                                                             <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SeX-3K-gYo"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGK-EE-uAu">
-                                                        <rect key="frame" x="242.5" y="0.0" width="111.5" height="100.5"/>
-                                                        <state key="normal" title="2.5" image="plate_2_5kg.png"/>
+                                                        <rect key="frame" x="242.5" y="0.0" width="111.5" height="108"/>
+                                                        <state key="normal" title="2.5" image="kg_2_5.png"/>
                                                         <connections>
                                                             <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b27-ii-dwv"/>
                                                         </connections>
@@ -113,25 +113,25 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kEV-Ke-AZh">
-                                                <rect key="frame" x="30" y="301" width="354" height="100.5"/>
+                                                <rect key="frame" x="30" y="296" width="354" height="108"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="az9-ZZ-sEa">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="100.5"/>
-                                                        <state key="normal" title="1.25" image="plate_1_25kg.png"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="108"/>
+                                                        <state key="normal" title="1.25" image="kg_0125.png"/>
                                                         <connections>
                                                             <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gvy-Gi-ZPf"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xml-DJ-Kdr">
-                                                        <rect key="frame" x="121.5" y="0.0" width="111" height="100.5"/>
-                                                        <state key="normal" title="0.5" image="plate_0_5kg.png"/>
+                                                        <rect key="frame" x="121.5" y="0.0" width="111" height="108"/>
+                                                        <state key="normal" title="0.5" image="kg_05.png"/>
                                                         <connections>
                                                             <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gLm-Od-zO6"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4x-43-r3n">
-                                                        <rect key="frame" x="242.5" y="0.0" width="111.5" height="100.5"/>
-                                                        <state key="normal" title="0.25" image="plate_2_5kg.png"/>
+                                                        <rect key="frame" x="242.5" y="0.0" width="111.5" height="108"/>
+                                                        <state key="normal" title="0.25" image="kg_025.png"/>
                                                         <connections>
                                                             <action selector="handleButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pz5-Bj-8Ej"/>
                                                         </connections>
@@ -143,10 +143,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="jRg-qu-LHZ">
-                                                <rect key="frame" x="82" y="431.5" width="250" height="100.5"/>
+                                                <rect key="frame" x="82" y="424" width="250" height="108"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V1-7O-pTe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="100.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="108"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="Remove"/>
                                                         <connections>
@@ -154,7 +154,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpW-S2-7uG">
-                                                        <rect key="frame" x="145" y="0.0" width="105" height="100.5"/>
+                                                        <rect key="frame" x="145" y="0.0" width="105" height="108"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="Clear"/>
                                                         <connections>
@@ -208,13 +208,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="plate_0_5kg.png" width="400" height="391"/>
-        <image name="plate_10kg.png" width="400" height="374"/>
-        <image name="plate_15kg.png" width="400" height="374"/>
-        <image name="plate_1_25kg.png" width="400" height="391"/>
-        <image name="plate_20kg.png" width="400" height="374"/>
-        <image name="plate_25kg.png" width="400" height="374"/>
-        <image name="plate_2_5kg.png" width="400" height="391"/>
-        <image name="plate_5kg.png" width="400" height="398"/>
+        <image name="kg_0125.png" width="400" height="400"/>
+        <image name="kg_025.png" width="400" height="400"/>
+        <image name="kg_05.png" width="400" height="400"/>
+        <image name="kg_10.png" width="400" height="400"/>
+        <image name="kg_15.png" width="400" height="400"/>
+        <image name="kg_20.png" width="400" height="400"/>
+        <image name="kg_25.png" width="400" height="400"/>
+        <image name="kg_2_5.png" width="400" height="400"/>
+        <image name="kg_5.png" width="400" height="400"/>
     </resources>
 </document>
