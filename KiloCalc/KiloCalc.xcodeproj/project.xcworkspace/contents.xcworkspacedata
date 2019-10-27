@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../../../Downloads/kg_10.png">
+      location = "absolute:/Users/linx1052/Desktop/KiloCalc/KiloCalc/KiloCalc/Images/NewPlates">
    </FileRef>
    <FileRef
       location = "self:">
