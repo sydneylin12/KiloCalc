@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0042F6A123B4257000CEFEAA /* Collar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0042F6A023B4257000CEFEAA /* Collar.png */; };
 		00DF064923B4361700724C26 /* DarkCollar.png in Resources */ = {isa = PBXBuildFile; fileRef = 00DF064823B4361700724C26 /* DarkCollar.png */; };
+		00DF064F23B45DA500724C26 /* Click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00DF064E23B45DA500724C26 /* Click.mp3 */; };
 		5642B7FB2366119B00169581 /* kg_2_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5642B7F52366119500169581 /* kg_2_5.png */; };
 		5642B7FC2366119B00169581 /* kg_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5642B7F92366119600169581 /* kg_5.png */; };
 		5642B7FD2366119B00169581 /* kg_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 5642B7F72366119600169581 /* kg_05.png */; };
@@ -21,7 +22,7 @@
 		56C8BEF82363948E00FA986A /* iOS Icon in Resources */ = {isa = PBXBuildFile; fileRef = 56C8BEF62363948E00FA986A /* iOS Icon */; };
 		56D6F9CD2357B8DD0070BF87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D6F9CC2357B8DD0070BF87 /* AppDelegate.swift */; };
 		56D6F9CF2357B8DD0070BF87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D6F9CE2357B8DD0070BF87 /* ViewController.swift */; };
-		56D6F9D22357B8DD0070BF87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D6F9D02357B8DD0070BF87 /* Main.storyboard */; };
+		56D6F9D22357B8DD0070BF87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D6F9D02357B8DD0070BF87 /* Main.storyboard */; settings = {ASSET_TAGS = (TopView, ); }; };
 		56D6F9D42357B8DE0070BF87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D6F9D32357B8DE0070BF87 /* Assets.xcassets */; };
 		56D6F9D72357B8DE0070BF87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D6F9D52357B8DE0070BF87 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		0042F6A023B4257000CEFEAA /* Collar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Collar.png; path = ../../../../../Downloads/Collar.png; sourceTree = "<group>"; };
 		00DF064823B4361700724C26 /* DarkCollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DarkCollar.png; path = ../../../../../Downloads/DarkCollar.png; sourceTree = "<group>"; };
+		00DF064E23B45DA500724C26 /* Click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Click.mp3; path = ../../../../../Downloads/Click.mp3; sourceTree = "<group>"; };
 		5642B7F22366119500169581 /* kg_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kg_20.png; sourceTree = "<group>"; };
 		5642B7F32366119500169581 /* kg_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kg_10.png; sourceTree = "<group>"; };
 		5642B7F42366119500169581 /* kg_0125.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kg_0125.png; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00DF064D23B45D9100724C26 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				00DF064E23B45DA500724C26 /* Click.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		561102F92357C115002BC0C0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		56D6F9CB2357B8DD0070BF87 /* KiloCalc */ = {
 			isa = PBXGroup;
 			children = (
+				00DF064D23B45D9100724C26 /* Audio */,
 				561102F92357C115002BC0C0 /* Images */,
 				56D6F9CC2357B8DD0070BF87 /* AppDelegate.swift */,
 				56D6F9CE2357B8DD0070BF87 /* ViewController.swift */,
@@ -140,6 +151,9 @@
 		56D6F9C12357B8DD0070BF87 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					TopView,
+				);
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "BroGains Brothers";
@@ -183,6 +197,7 @@
 				56D6F9D42357B8DE0070BF87 /* Assets.xcassets in Resources */,
 				56D6F9D22357B8DD0070BF87 /* Main.storyboard in Resources */,
 				00DF064923B4361700724C26 /* DarkCollar.png in Resources */,
+				00DF064F23B45DA500724C26 /* Click.mp3 in Resources */,
 				56C8BEF82363948E00FA986A /* iOS Icon in Resources */,
 				5642B8022366119B00169581 /* kg_025.png in Resources */,
 				5642B7FC2366119B00169581 /* kg_5.png in Resources */,
@@ -346,6 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9NZH626LPT;
 				INFOPLIST_FILE = KiloCalc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
@@ -353,6 +369,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = BroGainsBrothers.KiloCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -367,6 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9NZH626LPT;
 				INFOPLIST_FILE = KiloCalc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
@@ -374,6 +392,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = BroGainsBrothers.KiloCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

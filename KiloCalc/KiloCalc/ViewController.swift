@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     //Label for the kilogram and pound text
@@ -26,10 +27,25 @@ class ViewController: UIViewController {
     // Indicates if the collars are on
     var hasCollar: Bool = false
     
+    // For button audio
+    var audioPlayer: AVAudioPlayer = AVAudioPlayer()
+    
     // There by default
     override func viewDidLoad() {
         // Initialize the calculator
         updateText()
+        
+        // Instantiate audio player with click sound
+        let click = Bundle.main.path(forResource: "Click", ofType: ".mp3")
+        
+        // Swift try-catch block
+        do{
+            try audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: click!))
+        }
+        catch{
+            print("Error constructing audio.")
+        }
+        
         super.viewDidLoad()
     }
     
@@ -40,6 +56,8 @@ class ViewController: UIViewController {
 
     // Button send event
     @IBAction func handleButtonPress(_ sender: UIButton) {
+        // Play clicked audio
+        audioPlayer.play()
         // Format the double
         let addString = sender.titleLabel?.text
         //Need the exclamation to unwrap the nullable/optional double
@@ -53,6 +71,8 @@ class ViewController: UIViewController {
     
     // Clear out the calculator - reset to 20 kg
     @IBAction func clearCalculator(_ sender: UIButton) {
+        // Play clicked audio
+        audioPlayer.play()
         // Reset to just the bar
         weightList = [defaultWeight]
         // Reset the collar
@@ -64,11 +84,16 @@ class ViewController: UIViewController {
     
     // Remove the last element of the list
     @IBAction func removeButton(_ sender: UIButton) {
+        // Play clicked audio
+        audioPlayer.play()
         remove()
     }
     
     // Call function when collar is clicked
     @IBAction func onCollarClicked(_ sender: UIButton){
+        // Play clicked audio
+        audioPlayer.play()
+
         // If not toggled
         if(!hasCollar){
             // Update to highlighted image
@@ -86,7 +111,7 @@ class ViewController: UIViewController {
     }
     
     // Update the text of both labels
-    func updateText(){
+    func updateText() -> Void {
         let total = calculateList(list: weightList)
         let totalKg = String(format: "%.2f", total)
         let totalLb = String(format: "%.2f", total * 2.2)
