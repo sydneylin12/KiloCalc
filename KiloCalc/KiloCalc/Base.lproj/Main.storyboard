@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -142,11 +140,11 @@
                                                     <constraint firstItem="az9-ZZ-sEa" firstAttribute="width" secondItem="Xml-DJ-Kdr" secondAttribute="width" id="pJy-mX-KA7"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="jRg-qu-LHZ">
-                                                <rect key="frame" x="82" y="424" width="250" height="108"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jRg-qu-LHZ">
+                                                <rect key="frame" x="30" y="424" width="354" height="108"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V1-7O-pTe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="108"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="108"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="Remove"/>
                                                         <connections>
@@ -154,15 +152,23 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpW-S2-7uG">
-                                                        <rect key="frame" x="145" y="0.0" width="105" height="108"/>
+                                                        <rect key="frame" x="121.5" y="0.0" width="111" height="108"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="Clear"/>
                                                         <connections>
                                                             <action selector="clearCalculator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="syN-NK-HQc"/>
                                                         </connections>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUf-Yz-bTx">
+                                                        <rect key="frame" x="242.5" y="0.0" width="111.5" height="108"/>
+                                                        <state key="normal" title="Collar" image="Collar.png"/>
+                                                        <connections>
+                                                            <action selector="onCollarClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h3z-lZ-Gji"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstItem="QpW-S2-7uG" firstAttribute="width" secondItem="tUf-Yz-bTx" secondAttribute="width" id="Rgm-UI-E78"/>
                                                     <constraint firstItem="0V1-7O-pTe" firstAttribute="width" secondItem="QpW-S2-7uG" secondAttribute="width" id="Y0q-On-1Av"/>
                                                 </constraints>
                                             </stackView>
@@ -198,6 +204,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="collarButton" destination="tUf-Yz-bTx" id="r7V-m6-TfI"/>
                         <outlet property="kgLabel" destination="h0i-Ba-COl" id="1bl-w3-kwT"/>
                         <outlet property="lbLabel" destination="zJn-nQ-zOP" id="9UU-Hl-9CN"/>
                     </connections>
@@ -208,6 +215,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Collar.png" width="400" height="400"/>
         <image name="kg_0125.png" width="400" height="400"/>
         <image name="kg_025.png" width="400" height="400"/>
         <image name="kg_05.png" width="400" height="400"/>

@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "absolute:/Users/linx1052/Desktop/KiloCalc/KiloCalc/KiloCalc/Images/NewPlates">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
