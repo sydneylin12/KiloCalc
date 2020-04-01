@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0042F6A123B4257000CEFEAA /* Collar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0042F6A023B4257000CEFEAA /* Collar.png */; };
-		00DF064923B4361700724C26 /* DarkCollar.png in Resources */ = {isa = PBXBuildFile; fileRef = 00DF064823B4361700724C26 /* DarkCollar.png */; };
-		00DF064F23B45DA500724C26 /* Click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00DF064E23B45DA500724C26 /* Click.mp3 */; };
+		0077439E243431A20049E28D /* PlateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077439D243431A20049E28D /* PlateNode.swift */; };
 		5642B7FB2366119B00169581 /* kg_2_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5642B7F52366119500169581 /* kg_2_5.png */; };
 		5642B7FC2366119B00169581 /* kg_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5642B7F92366119600169581 /* kg_5.png */; };
 		5642B7FD2366119B00169581 /* kg_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 5642B7F72366119600169581 /* kg_05.png */; };
@@ -28,9 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0042F6A023B4257000CEFEAA /* Collar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Collar.png; path = ../../../../../Downloads/Collar.png; sourceTree = "<group>"; };
-		00DF064823B4361700724C26 /* DarkCollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DarkCollar.png; path = ../../../../../Downloads/DarkCollar.png; sourceTree = "<group>"; };
-		00DF064E23B45DA500724C26 /* Click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Click.mp3; path = ../../../../../Downloads/Click.mp3; sourceTree = "<group>"; };
+		0077439D243431A20049E28D /* PlateNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateNode.swift; sourceTree = "<group>"; };
 		5642B7F22366119500169581 /* kg_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kg_20.png; sourceTree = "<group>"; };
 		5642B7F32366119500169581 /* kg_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kg_10.png; sourceTree = "<group>"; };
 		5642B7F42366119500169581 /* kg_0125.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kg_0125.png; sourceTree = "<group>"; };
@@ -64,19 +60,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00DF064D23B45D9100724C26 /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				00DF064E23B45DA500724C26 /* Click.mp3 */,
-			);
-			path = Audio;
-			sourceTree = "<group>";
-		};
 		561102F92357C115002BC0C0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				00DF064823B4361700724C26 /* DarkCollar.png */,
-				0042F6A023B4257000CEFEAA /* Collar.png */,
 				5642B7F52366119500169581 /* kg_2_5.png */,
 				5642B7F92366119600169581 /* kg_5.png */,
 				5642B7F72366119600169581 /* kg_05.png */,
@@ -113,10 +99,10 @@
 		56D6F9CB2357B8DD0070BF87 /* KiloCalc */ = {
 			isa = PBXGroup;
 			children = (
-				00DF064D23B45D9100724C26 /* Audio */,
 				561102F92357C115002BC0C0 /* Images */,
 				56D6F9CC2357B8DD0070BF87 /* AppDelegate.swift */,
 				56D6F9CE2357B8DD0070BF87 /* ViewController.swift */,
+				0077439D243431A20049E28D /* PlateNode.swift */,
 				56D6F9D02357B8DD0070BF87 /* Main.storyboard */,
 				56D6F9D32357B8DE0070BF87 /* Assets.xcassets */,
 				56D6F9D52357B8DE0070BF87 /* LaunchScreen.storyboard */,
@@ -190,14 +176,11 @@
 				5642B7FD2366119B00169581 /* kg_05.png in Resources */,
 				56D6F9D72357B8DE0070BF87 /* LaunchScreen.storyboard in Resources */,
 				5642B8012366119B00169581 /* kg_25.png in Resources */,
-				0042F6A123B4257000CEFEAA /* Collar.png in Resources */,
 				5642B8032366119B00169581 /* kg_0125.png in Resources */,
 				5642B7FE2366119B00169581 /* kg_10.png in Resources */,
 				5642B8002366119B00169581 /* kg_20.png in Resources */,
 				56D6F9D42357B8DE0070BF87 /* Assets.xcassets in Resources */,
 				56D6F9D22357B8DD0070BF87 /* Main.storyboard in Resources */,
-				00DF064923B4361700724C26 /* DarkCollar.png in Resources */,
-				00DF064F23B45DA500724C26 /* Click.mp3 in Resources */,
 				56C8BEF82363948E00FA986A /* iOS Icon in Resources */,
 				5642B8022366119B00169581 /* kg_025.png in Resources */,
 				5642B7FC2366119B00169581 /* kg_5.png in Resources */,
@@ -213,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56D6F9CF2357B8DD0070BF87 /* ViewController.swift in Sources */,
+				0077439E243431A20049E28D /* PlateNode.swift in Sources */,
 				56D6F9CD2357B8DD0070BF87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,15 +345,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9NZH626LPT;
 				INFOPLIST_FILE = KiloCalc/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = BroGainsBrothers.KiloCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -384,15 +368,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9NZH626LPT;
 				INFOPLIST_FILE = KiloCalc/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = BroGainsBrothers.KiloCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
