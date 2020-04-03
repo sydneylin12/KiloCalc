@@ -9,6 +9,14 @@
 import Foundation
 import UIKit
 
+enum ActionType {
+    case ADD
+    case REMOVE
+    case CLEAR
+    case TOGGLE
+    case ERROR
+}
+
 class PlateNode {
     var weight: Double
     var color: UIColor

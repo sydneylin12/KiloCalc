@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import AudioToolbox
 
 class ViewController: UIViewController {
     //Label for the kilogram and pound text
@@ -16,17 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var collarButton: UIButton!
     @IBOutlet weak var visual: UIView!
     
-    // Default weight does not need to be changed
-    let defaultWeight: Double = 20.0
-    
-    // Collar weight constant
     let collarWeight: Double = 2.5
-    
-    // List of weights on the bar
-    var weightList: [Double] = [20.0]
-    var plateList: [PlateNode] = []
-    
     let maxPlates: Int = 10
+    var plateList: [PlateNode] = []
     
     // Indicates if the collars are on
     var hasCollar: Bool = false
@@ -36,6 +29,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         lbs.font = UIFont.monospacedDigitSystemFont(ofSize: 36, weight: UIFont.Weight.regular)
         kgs.font = UIFont.monospacedDigitSystemFont(ofSize: 36, weight: UIFont.Weight.regular)
+        
+        // Style elements
+        collarButton.layer.cornerRadius = 5.0
+        collarButton.clipsToBounds = true
+        
         updateText()
         generatePlateVisual()
     }
@@ -47,7 +45,7 @@ class ViewController: UIViewController {
 
     // Button send event
     @IBAction func handleButtonPress(_ sender: UIButton) {
-        
+        playClickSound(action: ActionType.ADD)
         if plateList.count >= 10 {
             print("Cannot add any more plates!")
             return
@@ -84,19 +82,18 @@ class ViewController: UIViewController {
     // Clear out the calculator - reset to 20 kg
     @IBAction func clearCalculator(_ sender: UIButton) {
         // Reset to just the bar
+        playClickSound(action: ActionType.CLEAR)
         plateList = []
         hasCollar = false
+        collarButton.backgroundColor = UIColor.clear
         updateText()
-        
-        // Clear out the super view
-        for sub in visual.subviews {
-            sub.removeFromSuperview()
-        }
+        generatePlateVisual()
     }
     
     // Remove the last element of the list
     @IBAction func removeButton(_ sender: UIButton) {
         //If there are no collars and only 1 plate
+        playClickSound(action: ActionType.REMOVE)
         if plateList.count == 0 {
             print("Cannot remove any more plates.")
             return
@@ -104,22 +101,32 @@ class ViewController: UIViewController {
         print("Removing last element.")
         plateList.removeLast()
         updateText()
+        generatePlateVisual()
     }
     
     // Call function when collar is clicked
     @IBAction func onCollarClicked(_ sender: UIButton){
-        if !hasCollar {
-            weightList.insert(collarWeight, at: 1)
+        playClickSound(action: ActionType.TOGGLE)
+        hasCollar = !hasCollar
+        
+        if hasCollar {
+            //collarButton.titleLabel?.textColor = UIColor.gray
+            collarButton.backgroundColor = UIColor.lightGray
         }
         else {
-            weightList.remove(at: 1) //Remove at index 1
+            //collarButton.titleLabel?.textColor = UIColor.blue
+            collarButton.backgroundColor = UIColor.clear
         }
-        hasCollar = !hasCollar
         updateText()
     }
     
     // Create the plates indicator
     func generatePlateVisual() {
+        // Clear out the super view
+        for sub in visual.subviews {
+            sub.removeFromSuperview()
+        }
+        
         if plateList.count <= 0 {
             return // prevent errors
         }
@@ -138,9 +145,8 @@ class ViewController: UIViewController {
             
             // Style label
             tile.layer.backgroundColor = plate.color.cgColor
-            //tile.layer.borderColor = UIColor.black.cgColor
-            tile.layer.borderColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1).cgColor
-            tile.layer.cornerRadius = 5.0
+            tile.layer.borderColor = UIColor(red: 0.15, green: 0.15, blue: 0.15, alpha: 1).cgColor
+            tile.layer.cornerRadius = 7.0
             tile.layer.masksToBounds = true
             tile.layer.borderWidth = 2.0
             
@@ -158,7 +164,7 @@ class ViewController: UIViewController {
     
     // Update the text of both labels
     func updateText() {
-        let total = calculateList(list: weightList)
+        let total = calculateList()
         let totalKg = String(format: "%.2f", total)
         let totalLbs = String(format: "%.2f", total * 2.2)
         kgs.text = "\(totalKg) kg"
@@ -166,13 +172,37 @@ class ViewController: UIViewController {
     }
     
     // Iterate through a list and sum it up into a double
-    func calculateList(list: [Double]) -> Double {
-        var total: Double = 0.0
-        total += list[0] //Add the bar at index 0
+    func calculateList() -> Double {
+        var total: Double = 20.0
+        
         for plate in plateList {
             total += 2 * plate.weight
         }
+        
+        if hasCollar {
+            total += 5
+        }
         return total
+    }
+    
+    // Play the keyboard click sound
+    func playClickSound(action: ActionType) {
+        if action == ActionType.ADD {
+            AudioServicesPlaySystemSound(SystemSoundID(1104))
+        }
+        else if action == ActionType.REMOVE {
+            AudioServicesPlaySystemSound(SystemSoundID(1155))
+        }
+        else if action == ActionType.CLEAR {
+            AudioServicesPlaySystemSound(SystemSoundID(1155))
+        }
+        else if action == ActionType.TOGGLE {
+            AudioServicesPlaySystemSound(SystemSoundID(1156))
+        }
+        else if action == ActionType.ERROR {
+            // BAD
+            //AudioServicesPlaySystemSound(SystemSoundID(1073))
+        }
     }
     
 }
